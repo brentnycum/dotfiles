@@ -1,0 +1,19 @@
+[core]
+	editor = `which vim`
+	excludesfile = /Users/bnycum/.gitignore_global
+	quotepath = false
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	revert = reset HEAD
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[user]
+	name = Brent Nycum
+	email = brentnycum@gmail.com
+[push]
+	default = current
+[pull]
+	default = current
+[diff]
+	diff = auto
