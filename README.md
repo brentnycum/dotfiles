@@ -15,6 +15,7 @@ I am running Mac OS X (10.8) on an iMac and MacBook Pro. Most of my dotfiles sho
  * [rbenv](https://github.com/sstephenson/rbenv)
  * [tmux](http://tmux.sourceforge.net/)
  * [tmuxinator](https://github.com/aziz/tmuxinator)
+ * [Slate](https://github.com/jigish/slate)
 
 ## Other Things
 

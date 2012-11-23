@@ -1,0 +1,48 @@
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# center window (for laptop)
+bind up:alt;cmd move (screenSizeX-windowSizeX)/2;(screenSizeY-windowSizeY)/2 windowSizeX;windowSizeY
+
+# move window based on numberpad layout
+bind pad1:ctrl corner bottom-left
+bind pad2:ctrl push bottom center
+bind pad3:ctrl corner bottom-right
+bind pad4:ctrl push left center
+bind pad5:ctrl move (screenSizeX-windowSizeX)/2;(screenSizeY/2)-(windowSizeY/2) windowSizeX;windowSizeY
+bind pad6:ctrl push right center
+bind pad7:ctrl corner top-left
+bind pad8:ctrl push top center
+bind pad9:ctrl corner top-right
+
+# Resize Bindings
+bind right:alt       resize +10% +0
+bind left:alt        resize -10% +0
+bind up:alt          resize +0   -10%
+bind down:alt        resize +0   +10%
+
+# Push Bindings
+bind right:ctrl;cmd  push right bar-resize:screenSizeX/3
+bind left:ctrl;cmd   push left  bar-resize:screenSizeX/3
+bind right:alt;cmd   push right bar-resize:(screenSizeX/3)*2
+bind left:alt;cmd    push left  bar-resize:(screenSizeX/3)*2
+
+# Nudge Bindings
+bind right:shift;alt nudge +10% +0
+bind left:shift;alt  nudge -10% +0
+bind up:shift;alt    nudge +0   -10%
+bind down:shift;alt  nudge +0   +10%
+
+# Focus Bindings
+bind right:shift;ctrl    focus right
+bind left:shift;ctrl     focus left
+bind up:shift;ctrl       focus up
+bind down:shift;ctrl     focus down
+bind down:cmd;alt focus behind
+bind up:cmd;alt   focus behind
+
+# Show Grid
+bind f16:cmd grid padding:5 0:3,1
+bind f17:cmd grid padding:5 0:4,1
+bind f18:cmd grid padding:5 0:4,2
+bind f19:cmd grid padding:5 0:14,8
