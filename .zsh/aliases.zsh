@@ -14,3 +14,6 @@ alias gs='git status'
 alias blankgit='mkdir blank.git; cd blank.git; git --bare init; touch git-daemon-export-ok; git --bare update-server-info; mv hooks/post-update.sample hooks/post-update; cd ..'
 
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias subl3="/Applications/Sublime\ Text\ 3.app/Contents/SharedSupport/bin/subl"
+
+alias xxd="xxd -g 1 -u"
